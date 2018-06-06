@@ -1,0 +1,35 @@
+labelgenerator:
+  label_path: 
+  out_file: 
+  image_path: 
+
+h5generator:
+  image_w:  227
+  image_h:  227
+  hdf5_path: 
+  class_col:  'gender_class'
+  directory_col:  'image_loc'
+  type_col: 'type'
+  csv_file_path: 
+
+model:
+  input_shape: !!python/tuple [227,227,3]
+  nb_classes: 2
+  model_path: 
+  weights_path: 
+  check_path: 
+  early_stop_th: 0.000000001
+  learning_rate: 0.01
+  momentum: 0.95
+  batch_size: 16
+  epochs: 50
+  steps_per_epoch: 1000
+  validation_steps: 800
+  target_size: !!python/tuple [227,227]
+  log_path: gender_log.csv
+  label_csv:  
+  h5_input: 
+
+
+
+
